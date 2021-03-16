@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job-flex a job portal website</title>
+  <!----fonts links start---->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <!----fonts links end---->
+  <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+  <!----css links start---->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!----css links end---->
+</head>
+
+<body>
+
+
+
+  <!-- ===========================
+            preloader start
+    ============================ -->
+  <section id="preloader">
+    <div class="container">
+      <div class="dot" style="--i:1"></div>
+      <div class="dot" style="--i:2"></div>
+      <div class="dot" style="--i:3"></div>
+      <div class="dot" style="--i:4"></div>
+      <div class="dot" style="--i:5"></div>
+    </div>
+  </section>
+  <!-- ===========================
+            preloader end
+    ============================ -->
+
+  <!-- ===========================
+            nav part start
+    ============================ -->
+  <nav class="navbar navbar-expand-lg navbar-expand-md menu-bar">
+    <div class="container-lg">
+      <div class="logo">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="logo">
+        </a>
+      </div>
+      <button class="navbar-toggler bar" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="menu-bars"><i class="fas fa-ellipsis-v"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item drop">
+            <a class="nav-link" href="#">Jobs<i class="fas fa-angle-down"></i></a>
+            <ul class="drop-down">
+              <li>
+                <a href="#">Govt. Job</a>
+              </li>
+              <li>
+                <a href="#">Non Govt. Job</a>
+              </li>
+            </ul>
+          </li>
+          <!-- accordion mb drop-down1 -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <li class="mb-drop">
+                    <a href="#">Jobs</a>
+                  </li>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <ul class="accordion-body">
+                  <li>
+                    <a href="#">Govt. Job</a>
+                  </li>
+                  <li>
+                    <a href="#">Non Govt. Job</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- accordion mb drop-down1 -->
+          <li class="nav-item drop">
+            <a class="nav-link" href="#">Candidates<i class="fas fa-angle-down"></i></a>
+            <ul class="drop-down candi">
+              <li><a href="#">Top Candidates</a></li>
+              <li><a href="#">Top Candidates 2</a></li>
+            </ul>
+          </li>
+          <!-- accordion mb drop-down2 -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <li class="mb-drop">
+                    <a class="candi-text" href="#">Candidates</a>
+                  </li>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <ul class="accordion-body">
+                  <li>
+                    <a href="#">Top Candidates</a>
+                  </li>
+                  <li>
+                    <a href="#">Top Candidates 2</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- accordion mb drop-down2 -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Employers</a>
+          </li>
+          <li class="nav-item drop">
+            <a class="nav-link" href="#">Pages<i class="fas fa-angle-down"></i></a>
+            <ul class="drop-down pages">
+              <li><a href="#">Blog Page</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Erorr 404</a></li>
+            </ul>
+          </li>
+          <!-- accordion mb drop-down3 -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <li class="mb-drop">
+                    <a class="page-text" href="#">Pages</a>
+                  </li>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <ul class="accordion-body">
+                  <li>
+                    <a href="#">Blog Page</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#">Erorr 404</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- accordion mb drop-down3 -->
+        </ul>
+      </div>
+      <div class="buttons">
+        <a href="#">Sign Up/Log In</a>
+      </div>
+    </div>
+  </nav>
+  <!-- ===========================
+            nav part end
+    ============================ -->
+
+
+  <!-- ===========================
+            banner part start
+    ============================ -->
+  <section id="banner-part">
+    <!---container start--->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="banner-text">
+            <i class="fas fa-search"></i>
+            <h2>Find your Dream Job from here</h2>
+            <p>Total 6,500+ Available jobs here, We are damn sure someone which fits you most. So, let grab the chance
+              to get a dream job.</p>
+            <div class="buttons">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="banner-img">
+            <img src="images/banner.png" alt="banner">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---container end--->
+  </section>
+  <!-- ===========================
+            banner part end
+    ============================ -->
+
+
+
+  <!-- ===========================
+            search part start
+    ============================ -->
+  <section id="search-part">
+    <!---container start--->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!---form start--->
+          <form>
+            <input type="text" placeholder="Keywords">
+            <select>
+              <option>Category</option>
+              <option>Govt. Job</option>
+              <option>IT Job</option>
+              <option>Bank Job</option>
+              <option>Private Firm</option>
+            </select>
+            <select>
+              <option>Location</option>
+              <option>Dhaka</option>
+              <option>Chittagong</option>
+              <option>Shylet</option>
+              <option>Comilla</option>
+              <option>Bogra</option>
+            </select>
+            <button type="submit">Search</button>
+          </form>
+          <!---form end--->
+        </div>
+      </div>
+    </div>
+    <!---container end--->
+  </section>
+  <!-- ===========================
+            search part end
+    ============================ -->
+
+
+  <!-- ===========================
+            category part start
+    ============================ -->
+  <section id="category-part">
+    <!---container start--->
+    <div class="container">
+      <!---title start--->
+      <div class="title">
+        <h2>Best Jobs For You</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+      </div>
+      <!---title end--->
+      <div class="cat top">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="item">
+              <img src="images/graphic-img.png" alt="graphic-img">
+              <h2>Graphic Design</h2>
+              <p>(3024 Jobs Available)</p>
+              <a href="#">view more</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="item">
+              <img src="images/web-img.png" alt="web-img">
+              <h2>Web Design</h2>
+              <p>(3024 Jobs Available)</p>
+              <a href="#">view more</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="item">
+              <img src="images/webd-img.png" alt="webd-img">
+              <h2>Web Development</h2>
+              <p>(3024 Jobs Available)</p>
+              <a href="#">view more</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="item">
+              <img src="images/tele-img.png" alt="tele-img">
+              <h2>Tele Comunication</h2>
+              <p>(3024 Jobs Available)</p>
+              <a href="#">view more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cat bottom">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="item">
+              <img src="images/teacher-img.png" alt="teacher-img">
+              <h2>Teacher & Mentors</h2>
+              <p>(3024 Jobs Available)</p>
+              <a href="#">view more</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="item">
+              <img src="images/account-img.png" alt="account-img">
+              <h2>Accounts & Finance</h2>
+              <p>(3024 Jobs Available)</p>
+              <a href="#">view more</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="item">
+              <img src="images/health-img.png" alt="health-img">
+              <h2>Healthcare</h2>
+              <p>(3024 Jobs Available)</p>
+              <a href="#">view more</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="item">
+              <img src="images/write-img.png" alt="write-img">
+              <h2>Content Writing</h2>
+              <p>(3024 Jobs Available)</p>
+              <a href="#">view more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---container end--->
+  </section>
+  <!-- ===========================
+            category part end
+    ============================ -->
+
+  <!-- ===========================
+            works part start
+    ============================ -->
+  <section id="works-part">
+    <!---container start--->
+    <div class="container">
+      <!---title start--->
+      <div class="title">
+        <h2>How It Works</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+      </div>
+      <!---title end--->
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <div class="item">
+            <img src="images/work-img1.png" alt="work-img1">
+            <h3>Creat Your Account</h3> <span><i class="fas fa-long-arrow-alt-right"></i></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <div class="item">
+            <img src="images/work-img2.png" alt="work-img2">
+            <h3>Search Your Dream Job</h3><span><i class="fas fa-long-arrow-alt-right"></i></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <div class="item">
+            <img src="images/work-img3.png" alt="work-img3">
+            <h3>Submit Your Resume</h3><span><i class="fas fa-check"></i></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---container end--->
+  </section>
+  <!-- ===========================
+            works part end
+    ============================ -->
+
+
+
+  <!-- ===========================
+          recents jobs start
+    ============================ -->
+  <section id="recents-jobs">
+    <!---container start--->
+    <div class="container">
+      <!---title start--->
+      <div class="title">
+        <h2>Recents Jobs</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+      </div>
+      <!---title end--->
+      <div class="row">
+        <div class="col-lg">
+          <!---top-part start--->
+          <div class="top-part">
+            <form>
+              <input type="text" placeholder="Search Keywords">
+              <select>
+                <option>Location</option>
+                <option>Dhaka</option>
+                <option>Chittagong</option>
+                <option>Shylet</option>
+              </select>
+              <button type="submit">Search</button>
+              <label>
+                <input class="check check1" type="checkbox"><span>Full Time</span>
+              </label>
+              <label>
+                <input class="check check2" type="checkbox"><span>Part Time</span>
+              </label>
+              <label>
+                <input class="check" type="checkbox"><span>Remote</span>
+              </label>
+              <label>
+                <input class="check check4" type="checkbox"><span>Outsource</span>
+              </label>
+              <label>
+                <input class="check" type="checkbox"><span>Monthly</span>
+              </label>
+              <label>
+                <input class="check" type="checkbox"><span>Hourly</span>
+              </label>
+            </form>
+          </div>
+          <!---top-part end--->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg">
+          <!---bottom-part start--->
+          <div class="bottom-part">
+            <div class="row up">
+              <div class="col-lg-4 col-sm-4">
+                <div class="plate top">
+                  <img src="images/rec-img1.jpg" alt="rec-img1">
+                  <p class="time">Full Time</p>
+                  <h3>Back-end Developer</h3>
+                  <h4>TomTon IT</h4>
+                  <p class="location"> <span><i class="fas fa-map-marker-alt"></i></span> New York</p>
+                  <p class="salary">$100 - $300 / Month</p>
+                  <div class="buttons">
+                    <a href="#">View More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4">
+                <div class="plate top">
+                  <img src="images/rec-img2.png" alt="rec-img2">
+                  <p class="time">Full Time</p>
+                  <h3>Front-end Developer</h3>
+                  <h4>Monilayz Soft</h4>
+                  <p class="location"> <span><i class="fas fa-map-marker-alt"></i></span> Los Angles</p>
+                  <p class="salary">$100 - $300 / Month</p>
+                  <div class="buttons">
+                    <a href="#">View More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4">
+                <div class="plate top">
+                  <img src="images/rec-img3.jpg" alt="rec-img3">
+                  <p class="time">Full Time</p>
+                  <h3>UI/UX Designer</h3>
+                  <h4>Mag Tech</h4>
+                  <p class="location"> <span><i class="fas fa-map-marker-alt"></i></span> Sydnie</p>
+                  <p class="salary">$100 - $300 / Month</p>
+                  <div class="buttons">
+                    <a href="#">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row down">
+              <div class="col-lg-4 col-sm-4">
+                <div class="plate bot">
+                  <img src="images/rec-img4.png" alt="rec-img4">
+                  <p class="time">Full Time</p>
+                  <h3>Software Developer</h3>
+                  <h4>Winners</h4>
+                  <p class="location"> <span><i class="fas fa-map-marker-alt"></i></span> New York</p>
+                  <p class="salary">$100 - $300 / Month</p>
+                  <div class="buttons">
+                    <a href="#">View More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4">
+                <div class="plate bot">
+                  <img src="images/rec-img5.png" alt="rec-img">
+                  <p class="time">Part Time</p>
+                  <h3>Data Analyzar</h3>
+                  <h4>Biks News</h4>
+                  <p class="location"> <span><i class="fas fa-map-marker-alt"></i></span> Bangkok</p>
+                  <p class="salary">$100 - $300 / Month</p>
+                  <div class="buttons">
+                    <a href="#">View More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4">
+                <div class="plate bot">
+                  <img src="images/rec-img6.jpg" alt="rec-img6">
+                  <p class="time">Part Time</p>
+                  <h3>Graphic Designer</h3>
+                  <h4>Olympus City</h4>
+                  <p class="location"> <span><i class="fas fa-map-marker-alt"></i></span> Los Angles</p>
+                  <p class="salary">$100 - $300 / Month</p>
+                  <div class="buttons">
+                    <a href="#">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---bottom-part end--->
+          <div class="buttons">
+            <a href="#">Brows All Jobs <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---container end--->
+  </section>
+  <!-- ===========================
+          recents jobs end
+    ============================ -->
+
+
+  <!-- ===========================
+          counter jobs start
+    ============================ -->
+  <section id="counter-part">
+    <!---container start--->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 col-md-3">
+          <div class="item">
+            <img src="images/users.png" alt="users">
+            <div class="counter">3024</div>
+            <h3>Job Available</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-3">
+          <div class="item">
+            <img src="images/cv-submited.png" alt="cv-submited">
+            <div class="counter">3652</div>
+            <h3>CV Submitted</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-3">
+          <div class="item down">
+            <img src="images/companise.png" alt="companise">
+            <div class="counter">23654</div>
+            <h3>Companise</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-3">
+          <div class="item down">
+            <img src="images/job.png" alt="job">
+            <div class="counter">25035</div>
+            <h3>Job Search</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---container end--->
+  </section>
+  <!-- ===========================
+          counter jobs end
+    ============================ -->
+
+
+  <!-- ===========================
+          download part start
+    ============================ -->
+  <section id="download-part">
+    <!---container start--->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="text">
+            <h2>Download Our App</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque dignissim quam et metus effici turac
+              fringilla lorem facilisis, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ellentesque dignissim quam et metus effici turac
+              fringilla lorem facilisis, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="button">
+              <a href="#">Download From <span><span class="icon"><i class="fab fa-apple"></i></span>App Store</span></a>
+              <a href="#">Download From <span><span class="icon"><i class="fab fa-google-play"></i></span>Play
+                  Store</span></a>
+            </div>
+            <div class="button mb-button">
+              <a href="#">Download From <span class="icon"><i class="fab fa-apple"></i></span></a>
+              <a href="#">Download From <span class="icon"><i class="fab fa-google-play"></i></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="img">
+            <img src="images/down-img.png" alt="down-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---container end--->
+  </section>
+  <!-- ===========================
+          download part end
+    ============================ -->
+
+
+
+  <!-- ===========================
+          remote workers part start
+    ============================ -->
+  <section id="remote-part">
+    <!---container start--->
+    <div class="container">
+      <!---title start--->
+      <div class="title">
+        <h2>Top Remote Workers</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+      </div>
+      <!---title end--->
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <div class="item">
+            <div class="top">
+              <!---top part start--->
+              <div class="img">
+                <img src="images/our-worker-img-1.png" alt="our-worker-img-1">
+              </div>
+              <div class="details">
+                <h3>mark Decosta</h3>
+                <h5>Web Developer</h5>
+              </div>
+              <div class="review">
+                <div class="icons">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p> 5.0 (520 reviews)</p>
+              </div>
+            </div>
+            <!---top part end--->
+            <!---bottom part start--->
+            <div class="bottom">
+              <div class="job-details">
+                <h5>Hourly rate</h5>
+                <h4>$30.00/hr</h4>
+              </div>
+              <div class="job-details">
+                <h5>Location</h5>
+                <h4 class="right-text">Bangladesh</h4>
+              </div>
+              <div class="job-details">
+                <h5>Job success</h5>
+                <h4 class="right-text">100%</h4>
+              </div>
+              <a href="#">View Profile <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+            <!---bottom part end--->
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <div class="item">
+            <div class="top">
+              <!---top part start--->
+              <div class="img">
+                <img src="images/our-worker-img-2.png" alt="our-worker-img-2">
+              </div>
+              <div class="details">
+                <h3>Rekeba Marleen</h3>
+                <h5>Web Designer</h5>
+              </div>
+              <div class="review">
+                <div class="icons">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p> 4.9 (850 reviews)</p>
+              </div>
+            </div>
+            <!---top part end--->
+            <!---bottom part start--->
+            <div class="bottom">
+              <div class="job-details">
+                <h5>Hourly rate</h5>
+                <h4>$25.00/hr</h4>
+              </div>
+              <div class="job-details">
+                <h5>Location</h5>
+                <h4 class="right-text">Italy</h4>
+              </div>
+              <div class="job-details">
+                <h5>Job success</h5>
+                <h4 class="right-text">100%</h4>
+              </div>
+              <a href="#">View Profile <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+            <!---bottom part end--->
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <div class="item">
+            <div class="top">
+              <!---top part start--->
+              <div class="img">
+                <img src="images/our-worker-img-3.png" alt="our-worker-img-3">
+              </div>
+              <div class="details">
+                <h3>Andrew Russel</h3>
+                <h5>UI/UX Designer</h5>
+              </div>
+              <div class="review">
+                <div class="icons">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p> 4.8 (1520 reviews)</p>
+              </div>
+            </div>
+            <!---top part end--->
+            <!---bottom part start--->
+            <div class="bottom">
+              <div class="job-details">
+                <h5>Hourly rate</h5>
+                <h4>$20.00/hr</h4>
+              </div>
+              <div class="job-details">
+                <h5>Location</h5>
+                <h4 class="right-text">Canada</h4>
+              </div>
+              <div class="job-details">
+                <h5>Job success</h5>
+                <h4 class="right-text">100%</h4>
+              </div>
+              <a href="#">View Profile <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+            <!---bottom part end--->
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <p>There have 1,952 skilled wokers yet, Browse more...</p>
+        <a href="#">Browse All Workers <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+    <!---container end--->
+  </section>
+  <!-- ===========================
+          remote workers part end
+    ============================ -->
+
+
+
+  <!-- ===========================
+          subscribe part start
+    ============================ -->
+  <section id="subscribe-part">
+    <!---container start--->
+    <div class="container">
+      <!---subscribe-item start--->
+      <div class="subscribe-item">
+        <h2>Subscribe Newsletter</h2>
+        <form>
+          <input type="text" placeholder="Enter Your E-mail">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <!---subscribe-item end--->
+    </div>
+    <!---container end--->
+  </section>
+  <!-- ===========================
+          subscribe part end
+    ============================ -->
+  <div class="top-button">
+    <span><i class="fas fa-arrow-up"></i></span>
+  </div>
+
+
+  <!-- ===========================
+          footer part start
+    ============================ -->
+  <section id="footer-part">
+    <!---overlay start--->
+    <div class="overlay">
+      <!---container start--->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="about item">
+              <!---title start--->
+              <div class="title">
+                <h2>About Us</h2>
+              </div>
+              <!---title end--->
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, magnam. Magni dolorem explicabo
+                voluptatem tenetur aliquam recusandae doloribus odit est repudiandae, laborum eligendi, rem quae
+                assumenda? Dolorem, quam. Iste sequi similique, possimus quisquam reiciendis omnis vel amet iure
+                corporis corrupti. Atque ullam perferendis, unde corrupti nulla voluptates enim! Consequatur debitis
+                nobis dolores voluptatem enim atque corrupti cumque iure dolorem rerum?</p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-1"></div>
+          <div class="col-lg-5 col-md-5">
+            <div class="social-links item">
+              <div class="title">
+                <h2 class="links-title">Social Links</h2>
+              </div>
+              <!---title end--->
+              <div class="icons">
+                <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="behance" href="#"><i class="fab fa-behance"></i></a>
+                <a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="googleplus" href="#"><i class="fab fa-google-plus-g"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg">
+            <div class="copy-right-part">
+              <p>Copyright 2021. All rights reserved by Designer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---container end--->
+    </div>
+    <!---overlay end--->
+  </section>
+  <!-- ===========================
+          footer part end
+    ============================ -->
+
+
+
+
+
+
+
+  <!----js links start---->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.js"></script>
+  <script src="js/jquery.waypoints.js"></script>
+  <script src="js/jquery.rcounterup.js"></script>
+  <script src="js/script.js"></script>
+  <!----js links end---->
+</body>
+
+</html>

@@ -1,0 +1,1044 @@
+/* =========================
+    common css start
+========================= */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+.buttons a{
+    display: inline-block;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    background-image: linear-gradient( to right, #0abbf0 , #56d1f4);
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: .4s;
+}
+.buttons a:hover{
+    background-image: linear-gradient( to right, #b446ff , #6d68fe);
+}
+.title{
+    text-align: center;
+}
+.title h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 32px;
+    color: #222222;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.title p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    font-weight: 400;
+    width: 566px;
+    margin: auto;
+}
+/* =========================
+    common css end
+========================= */
+
+
+/* =========================
+    preloader css start
+========================= */
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #f1f1f1;
+    z-index: 9999;
+}
+#preloader .dot{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #0abbf0;
+    transform: translate(-50%,-50%);
+    animation: moveit linear 1s infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+#preloader .dot:nth-child(2){
+    left: 48%;
+}
+#preloader .dot:nth-child(3){
+    left: 46%;
+}
+#preloader .dot:nth-child(4){
+    left: 52%;
+}
+#preloader .dot:nth-child(5){
+    left: 54%;
+}
+
+@keyframes moveit {
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+/* =========================
+    preloader css end
+========================= */
+
+
+
+/* =========================
+    nav part css start
+========================= */
+nav{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.fixed-menu{
+    background: #fff;
+    border-bottom: 1px solid #e9e9e9;
+
+}
+nav ul{
+    margin-top: 15px;
+}
+nav ul li{
+    margin: 0 15px;
+}
+nav ul li a{
+    display: inline-block;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #848484;
+    font-weight: 500;
+    position: relative;
+    transition: .4s;
+}
+nav ul li a svg{
+    margin-left: 10px;
+    transition: .4s;
+}
+nav ul li a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-image: linear-gradient( to right, #b446ff , #6d68fe);
+    transition: .4s;
+}
+nav ul .drop{
+    position: relative;
+}
+nav ul .drop .drop-down{
+    width: 200%;
+    background: #0abbf0;
+    border-radius: 5px;
+    padding-left: 0;
+    position: absolute;
+    bottom: -145px;
+    left: -40px;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: .4s;
+}
+nav ul .drop .pages{
+    bottom: -170px;
+}
+nav ul .drop .candi{
+    width: 150%;
+}
+nav ul .drop:hover .drop-down{
+    bottom: -105px;
+    visibility: visible;
+    opacity: 1;
+}
+nav ul .drop:hover .pages{
+    bottom: -150px;
+}
+nav ul .drop .drop-down li{
+    margin: 0;
+    padding: 10px 0;
+    transition: .4s;
+}
+nav ul .drop .drop-down li:hover{
+    background-image: linear-gradient( to right, #b446ff , #6d68fe);
+}
+nav ul .drop .drop-down li a{
+    display: inline-block;
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 20px;
+}
+nav ul .drop .drop-down li a:before{
+    display: none;
+}
+nav ul li .active{
+    color: #0abbf0;
+}
+nav ul li:hover a:before{
+    width: 100%;
+}
+nav ul li:hover a{
+    color: #0abbf0;
+}
+nav ul li:hover svg{
+    transform: rotate(180deg);
+}
+nav .buttons{
+    margin-top: 10px;
+}
+nav ul .accordion{
+    display: none;
+}
+/* =========================
+    nav part css end
+========================= */
+
+
+/* =========================
+    banner part css start
+========================= */
+#banner-part{
+    background: #fef8ff;
+    padding-top: 80px;
+}
+#banner-part .banner-text{
+    margin-top: 157px;
+    position: relative;
+}
+#banner-part .banner-text svg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 60px;
+    color: #ededed;
+    animation: animate linear 4s infinite;
+}
+@keyframes animate{
+    0%{
+        top: 20px;
+        right: 20px;
+    }
+    25%{
+        top: -20px;
+        right: -20px;
+    }
+    50%{
+        top: 20px;
+        right: 20px;
+    }
+    75%{
+        top: -20px;
+        right: -20px;
+    }
+
+    100%{
+        top: 20px;
+        right: 20px;
+    }
+}
+#banner-part .banner-text h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 58px;
+    color: #222222;
+    font-weight: 400;
+}
+#banner-part .banner-text p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    color: #444444;
+    font-weight: 400;
+}
+#banner-part .banner-text .buttons{
+    margin-top: 35px;
+}
+#banner-part .banner-img img{
+    width: 100%;
+}
+
+/* =========================
+    banner part css end
+========================= */
+
+
+
+/* =========================
+    search part css start
+========================= */
+#search-part{
+    padding-bottom: 80px;
+}
+#search-part form{
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.35);
+    padding: 30px 20px;
+}
+#search-part input{
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    color: #444444;
+    font-style: italic;
+    border: 1px solid #e9e9e9;
+    width: 29%;
+    padding: 8px;
+}
+#search-part input:focus{
+    outline: 1px solid #0abbf0;
+}
+#search-part select{
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    color: #444444;
+    font-style: italic;
+    border: 1px solid #e9e9e9;
+    width: 30%;
+    padding: 10px;
+    margin-left: 2px;
+}
+#search-part select:focus{
+    outline: 1px solid #0abbf0;
+}
+#search-part button{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background-image: linear-gradient( to right, #0abbf0 , #56d1f4);
+    padding: 7px 20px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #0abbf0;
+    transition: .4s;
+}
+#search-part button:hover{
+    background-image: linear-gradient( to right, #b446ff , #6d68fe);
+    border: 1px solid #6d68fe;
+}
+/* =========================
+    search part css end
+========================= */
+
+
+
+/* =========================
+  category part css start
+========================= */
+#category-part{
+    padding-bottom: 100px;
+}
+#category-part .top{
+    margin-top: 60px;
+}
+#category-part .cat .item{
+    background: #f1f1f1;
+    text-align: center;
+    padding: 70px 10px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+
+#category-part .bottom .item{
+    margin-top: 25px;
+}
+#category-part .cat .item a{
+    display: inline-block;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    color: #222222;
+    background: #fff;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -12%;
+    left: 6%;
+    transform: translate(50%,50%);
+    transition: .4s;
+}
+#category-part .cat .item h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+    color: #222222;
+    font-weight: 400;
+    transition: .4s;
+}
+#category-part .cat .item p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    font-weight: 400;
+    margin-top: 10px;
+    transition: .4s;
+}
+#category-part .cat .item:hover{
+    background-image: linear-gradient( to right, #b446ff , #6d68fe);
+}
+#category-part .cat .item:hover h2{
+    color: #fff;
+}
+#category-part .cat .item:hover p{
+    color: #fff;
+}
+#category-part .cat .item:hover a{
+    bottom: 13%;
+}
+/* =========================
+    category part css end
+========================= */
+
+
+/* =========================
+    works part css start
+========================= */
+#works-part{
+    background: #f5f5f5;
+    padding: 100px 0;
+}
+#works-part .item{
+    border: 1px solid #56d1f4;
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px 6px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+#works-part .item span{
+    display: inline-block;
+    font-size: 30px;
+    color: #56d1f4;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: .4s;
+}
+#works-part .item h3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+    color: #222222;
+    font-weight: 400;
+    margin-top: 20px;
+}
+#works-part .item p{
+font-family: 'Arimo', sans-serif;
+font-size: 15px;
+color: #444444;
+font-weight: 400;
+line-height: 26px;
+width: 345px;
+margin-top: 40px;
+}
+#works-part .item:hover span{
+    opacity: 1;
+    left: 50%;
+}
+
+/* =========================
+    works part css end
+========================= */
+
+
+
+/* =========================
+    recents jobs css start
+========================= */
+#recents-jobs{
+    background: #fff;
+    padding: 100px 0;
+}
+#recents-jobs .top-part{
+    margin-top: 60px;
+}
+#recents-jobs .top-part input{
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    color: #c9c9c9;
+    border: 1px solid #dddddd;
+    font-weight: 400;
+    font-style: italic;
+    padding: 10px;
+    width: 41%;
+    outline: 0;
+}
+#recents-jobs .top-part input:focus{
+    border: 1px solid #56d1f4;
+}
+#recents-jobs .top-part select{
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    color: #c9c9c9;
+    border: 1px solid #dddddd;
+    font-weight: 400;
+    font-style: italic;
+    width: 41%;
+    padding: 12px;
+    margin-left: 20px;
+    outline: 0;
+}
+#recents-jobs .top-part select:focus{
+    border: 1px solid #56d1f4;
+}
+#recents-jobs .top-part button{
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background-image: linear-gradient(to right, #0abbf0 , #56d1f4);
+    border: 1px solid #56d1f4;
+    padding: 8px 40px;
+    outline: 0;
+    margin-left: 20px;
+    transition: .4s;
+}
+#recents-jobs .top-part button:hover{
+    background-image: linear-gradient( to right, #b446ff , #6d68fe);
+    border: 1px solid #6d68fe;
+}
+#recents-jobs .top-part .check{
+    width: 15px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+#recents-jobs .top-part .check1{
+    margin-left: 0;
+}
+#recents-jobs .top-part span{
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    color: #777777;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 10px;
+}
+#recents-jobs .top-part input:checked ~ .check{
+    background-color: #7fff00;
+}
+#recents-jobs .bottom-part .plate{
+    position: relative;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 0px 1px 8px 4px rgb(0 0 0 / 7%);
+    transition: .4s;
+    z-index: 1;
+}
+#recents-jobs .bottom-part .plate::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #b446ff , #6d68fe);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: .4s;
+    z-index: -1;
+}
+#recents-jobs .bottom-part .top{
+    margin-top: 50px;
+}
+#recents-jobs .bottom-part .bot{
+    margin-top: 25px;
+}
+#recents-jobs .bottom-part .tablet{
+    display: none;
+}
+#recents-jobs .bottom-part .plate h3{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #222222;
+    font-weight: 500;
+    transition: .4s;
+}
+#recents-jobs .bottom-part .plate h4{
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    color: #222222;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: .4s;
+}
+#recents-jobs .bottom-part .plate p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    color: #444444;
+    font-weight: 400;
+    margin-top: 10px;
+    transition: .4s;
+}
+#recents-jobs .bottom-part .plate p span{
+    display: inline-block;
+    font-size: 18px;
+    color: #0abbf0;
+    transition: .4s;
+}
+#recents-jobs .bottom-part .plate .buttons a{
+    font-size: 14px;
+}
+#recents-jobs .bottom-part .plate .buttons{
+    margin-top: 15px;
+}
+#recents-jobs .bottom-part .plate:hover h3{
+    color: #ffffff;
+}
+#recents-jobs .bottom-part .plate:hover h4{
+    color: #ffffff;
+}
+#recents-jobs .bottom-part .plate:hover p{
+    color: #ffffff;
+}
+#recents-jobs .bottom-part .plate:hover p span{
+    color: #ffffff;
+}
+#recents-jobs .bottom-part .plate:hover .buttons a{
+    color: #444444;
+    background: #ffffff;
+}
+#recents-jobs .bottom-part .plate:hover::before{
+    border-radius: 0;
+    transform: scale(1);
+}
+#recents-jobs .buttons{
+    text-align: center;
+    margin-top: 60px;
+}
+#recents-jobs .buttons a{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/* =========================
+    recents jobs css end
+========================= */
+
+
+
+/* =========================
+    counter jobs css start
+========================= */
+#counter-part{
+    background: #f9fcff;
+    padding: 100px 0;
+}
+#counter-part .item{
+    text-align: center;
+}
+#counter-part .item img{
+    color: #fff;
+}
+#counter-part .item .counter{
+    font-family: 'Arimo', sans-serif;
+    font-size: 50px;
+    color: #0abbf0;
+    margin-top: -10px;
+}
+#counter-part .item h3{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #0abbf0;
+    margin-top: -10px;
+}
+
+/* =========================
+    counter jobs css end
+========================= */
+
+
+
+/* =========================
+    download part css start
+========================= */
+#download-part{
+    background: #fdffec;
+    padding: 100px 0;
+}
+#download-part .text h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 32px;
+    color: #222222;
+    font-weight: 400;
+}
+#download-part .text p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #444;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 30px;
+    width: 510px;
+}
+#download-part .text .button{
+    display: flex;
+    margin-top: 40px;
+}
+#download-part .text .mb-button{
+    display: none;
+}
+#download-part .text .button a{
+    display: inline-block;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    background: #0abbf0;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+#download-part .text .button a:nth-child(2){
+    margin-left: 20px;
+}
+#download-part .text .button .icon{
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px;
+}
+#download-part .text .button span{
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+#download-part .img img{
+    width: 100%;
+}
+
+/* =========================
+    download part css end
+========================= */
+
+
+
+/* =========================
+remote workers part css start
+========================= */
+#remote-part{
+    background: #f5f5f5;
+    padding: 100px 0;
+}
+#remote-part .item{
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 60px;
+    cursor: pointer;
+    transition: .4s;
+}
+#remote-part .item .top{
+    text-align: center;
+}
+#remote-part .item .top .details h3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+    color: #222222;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+#remote-part .item .top .details h5{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+#remote-part .item .top .review{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+#remote-part .item .top .review:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    background: #c9c9c9;
+    width: 80%;
+    height: 1px;
+}
+#remote-part .item .top .review .icons svg{
+    color: #f68b1e;
+}
+#remote-part .item .top .review p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 13px;
+    color: #222222;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#remote-part .item .bottom{
+    text-align: center;
+}
+#remote-part .item .bottom .job-details{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding: 20px 0;
+}
+#remote-part .item .bottom .job-details:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background: #c9c9c9;
+}
+#remote-part .item .bottom .job-details h5{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #222222;
+    font-weight: 700;
+}
+#remote-part .item .bottom .job-details h4{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #222222;
+    font-weight: 700;
+}
+#remote-part .item .bottom .job-details .right-text{
+    font-size: 16px;
+    font-weight: 500;
+}
+#remote-part .item .bottom a{
+    display: inline-block;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #222222;
+    font-weight: 700;
+    padding-top: 20px;
+    transition: .4s;
+}
+#remote-part .item:hover{
+    filter: drop-shadow(-1px -1px 5px #8b8a8a);
+}
+#remote-part .item:hover .bottom a{
+    color: #56d1f4;
+}
+#remote-part .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+#remote-part .buttons p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    font-weight: 400;
+    margin-top: 15px;
+}
+/* =========================
+ remote workers part css end
+========================= */
+
+
+
+/* =========================
+ subscribe part css start
+========================= */
+#subscribe-part{
+    position: relative;
+    background: #f5f5f5;
+    padding-top: 100px;
+}
+#subscribe-part .subscribe-item{
+    text-align: center;
+    background: #fff;
+    padding: 30px 0;
+    width: 80%;
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: drop-shadow(-1px -1px 5px #8b8a8a);
+}
+#subscribe-part .subscribe-item h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    color: #444444;
+    font-weight: 400;
+    text-align: center;
+}
+#subscribe-part .subscribe-item input{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    width: 60%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #56d1f4;
+    outline: 0;
+    margin-top: 50px;
+}
+#subscribe-part .subscribe-item form button{
+    display: inline-block;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background: #56d1f4;
+    border: 1px solid #56d1f4;
+    padding: 10px 15px;
+    outline: 0;
+    position: absolute;
+    top: 50%;
+    right: 14%;
+    transform: translate(-50%,50%);
+}
+
+/* =========================
+ subscribe part css end
+========================= */
+.top-button{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    border: 2px solid #6d68fe;
+    background-image: linear-gradient(to right, #0abbf0 , #56d1f4);
+    z-index: 1;
+}
+.top-button span{
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+}
+
+
+/* =========================
+     footer part css end
+========================= */
+#footer-part{
+    background: url(../images/footer-bg.png) no-repeat center;
+    background-size: cover;
+}
+#footer-part .overlay{
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    padding: 120px 0 30px 0;
+}
+#footer-part .overlay .item{
+    margin-top: 60px;
+}
+#footer-part .overlay .item .title h2{
+    color: #fff;
+    text-align: left;
+}
+#footer-part .overlay .about p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 26px;
+}
+#footer-part .overlay .social-links a{
+    display: inline-block;
+    font-size: 20px;
+    color: #dd4b39;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 8px;
+    transition: .4s;
+}
+#footer-part .overlay .social-links .facebook{
+    color: #4267b2;
+    padding: 10px 17px;
+    margin-left: 0;
+    transition: .4s;
+}
+#footer-part .overlay .social-links .facebook:hover{
+    background: #4267b2;
+    color: #fff;
+    border: 1px solid #4267b2;
+}
+#footer-part .overlay .social-links .twitter{
+    color: #1da1f2;
+    padding: 10px 13px;
+    transition: .4s;
+}
+#footer-part .overlay .social-links .twitter:hover{
+    background: #1da1f2;
+    color: #fff;
+    border: 1px solid #1da1f2;
+}
+#footer-part .overlay .social-links .behance{
+    color: #053eff;
+    padding: 10px 12px;
+    transition: .4s;
+}
+#footer-part .overlay .social-links .behance:hover{
+    background: #053eff;
+    color: #fff;
+    border: 1px solid #053eff;
+}
+#footer-part .overlay .social-links .linkedin{
+    color: #0e76a8;
+    padding: 10px 14px;
+    transition: .4s;
+}
+#footer-part .overlay .social-links .linkedin:hover{
+    background: #0e76a8;
+    color: #fff;
+    border: 1px solid #0e76a8;
+}
+#footer-part .overlay .social-links a:hover{
+    background: #dd4b39;
+    color: #fff;
+    border: 1px solid #dd4b39;
+}
+#footer-part .overlay .copy-right-part{
+    border-top: 1px solid #444444;
+    margin-top: 80px;
+    padding-top: 20px;
+}
+#footer-part .overlay .copy-right-part p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+/* =========================
+     footer part css end
+========================= */
