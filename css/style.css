@@ -215,6 +215,63 @@ nav ul li:hover svg{
 nav .buttons{
     margin-top: 10px;
 }
+nav .buttons a{
+    display: inline-block;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    position: relative;
+    margin: 0 8px;
+}
+nav .buttons a svg{
+    margin-left: 5px;
+}
+nav .buttons .login:before {
+    content: "LogIn";
+    position: absolute;
+    bottom: -28px;
+    left: 1px;
+    width: 97%;
+    height: 23px;
+    background: #6d68fe;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 0px 10px;
+    opacity: 0;
+    transition: .4s;
+}
+nav .buttons .signup:before {
+    content: "SignUp";
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    width: 100%;
+    height: 23px;
+    background: #6d68fe;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 0px 10px;
+    opacity: 0;
+    transition: .4s;
+}
+nav .buttons .login:hover:before{
+    opacity: 1;
+}
+nav .buttons .signup:hover:before{
+    opacity: 1;
+}
+nav .buttons a svg{
+    margin-right: 5px;
+}
 nav ul .accordion{
     display: none;
 }
@@ -1041,4 +1098,179 @@ remote workers part css start
 }
 /* =========================
      footer part css end
+========================= */
+
+
+/* =========================
+    signup part css start
+========================= */
+#sign-up{
+    position: relative;
+    background: #fef8ff;
+    padding: 120px 0;
+}
+#sign-up form{
+    margin-top: 80px;
+}
+#sign-up .form-part{
+    width: 45%;
+    margin: 0 auto;
+}
+#sign-up .form-part span{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    color: #444444;
+}
+#sign-up .form-part h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    color: #444444;
+    font-weight: 400;
+    text-align: center;
+}
+#sign-up .form-part input{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    font-weight: 400;
+    padding: 5px 10px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    outline: 0;
+}
+#sign-up .form-part .name{
+    margin-top: 40px;
+}
+#sign-up .form-part .short{
+    width: 48%;
+}
+#sign-up .form-part .right{
+    margin-left: 10px;
+}
+#sign-up .form-part .e-mail{
+    width: 98.5%;
+    margin: 20px 0;
+}
+#sign-up .form-part select{
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    color: #444444;
+    font-weight: 400;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    outline: 0;
+    margin-top: 5px;
+}
+#sign-up .form-part select:nth-child(3){
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#sign-up .form-part .date-of-birth{
+    display: inline-block;
+}
+#sign-up .form-part .date-of-birth h5{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    font-weight: 600;
+    margin-top: 10px;
+}
+#sign-up .form-part .date{
+    margin-top: 10px;
+}
+#sign-up .form-part .gen{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+#sign-up .form-part .buttons{
+    text-align: center;
+    margin-top: 40px;
+}
+#sign-up .form-part button{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #0abbf0;
+    outline: 0;
+    border: 1px solid #0abbf0;
+    border-radius: 50px;
+    padding: 10px 40px;
+    width: 98%;
+}
+
+/* =========================
+    signup part css end
+========================= */
+
+
+/* =========================
+    login part css start
+========================= */
+#login-page{
+    position: relative;
+    background: #fef8ff;
+    padding: 120px 0;
+}
+#login-page form{
+    margin-top: 80px;
+}
+#login-page .form-part{
+    width: 45%;
+    margin: 0 auto;
+}
+#login-page .form-part span{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    color: #444444;
+}
+#login-page .form-part h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    color: #444444;
+    font-weight: 400;
+    text-align: center;
+}
+#login-page .form-part .email{
+    margin-top: 40px;
+}
+#login-page .form-part .pass{
+    margin-top: 20px;
+}
+#login-page .form-part input{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    font-weight: 400;
+    padding: 5px 10px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    width: 100%;
+    outline: 0;
+}
+#login-page .form-part .buttons{
+    text-align: center;
+    margin-top: 40px;
+}
+#login-page .form-part button{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #0abbf0;
+    outline: 0;
+    border: 1px solid #0abbf0;
+    border-radius: 50px;
+    padding: 10px 40px;
+    width: 98%;
+}
+
+
+
+/* =========================
+    login part css end
 ========================= */

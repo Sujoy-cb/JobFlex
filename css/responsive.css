@@ -1,46 +1,39 @@
-@media (min-width:320px) and (max-width:575px){
-
-
-    .buttons a{
+@media (min-width:320px) and (max-width:575px) {
+    .buttons a {
         font-size: 16px;
     }
-    .title h2{
+    .title h2 {
         font-size: 28px;
     }
-    .title p{
+    .title p {
         font-size: 13px;
         width: 100%;
     }
-
-
-
     /* ============================
         preloader responsive start
     ============================== */
-    #preloader .dot{
+    #preloader .dot {
         left: 49%;
     }
-    #preloader .dot:nth-child(2){
+    #preloader .dot:nth-child(2) {
         left: 41%;
     }
-    #preloader .dot:nth-child(3){
+    #preloader .dot:nth-child(3) {
         left: 33%;
     }
-    #preloader .dot:nth-child(4){
+    #preloader .dot:nth-child(4) {
         left: 57%;
     }
-    #preloader .dot:nth-child(5){
+    #preloader .dot:nth-child(5) {
         left: 65%;
     }
     /* ============================
         preloader responsive end
     ============================== */
-
-
     /* ============================
             nav responsive start
     ============================== */
-    nav{
+    nav {
         background: #fff;
         border-bottom: 1px solid #e9e9e9;
         position: fixed !important;
@@ -49,156 +42,191 @@
         display: block !important;
         overflow: hidden;
     }
-    .fixed-menu{
+    .fixed-menu {
         display: none;
     }
-    nav .logo img{
+    nav .logo img {
         width: 56%;
     }
-    nav .buttons a{
+    nav .buttons a {
         font-size: 14px;
         padding: 3px 8px;
     }
-    nav .bar{
+    nav .bar {
         background: #0abbf0;
         border: 3px solid #6d68fe;
     }
-    .navbar-toggler:focus{
+    .navbar-toggler:focus {
         box-shadow: none;
     }
-    nav .bar .menu-bars{
+    nav .bar .menu-bars {
         color: #fff;
     }
-    nav ul li{
+    nav ul li {
         text-align: center;
     }
-    nav ul li .candi-text{
+    nav ul li .candi-text {
         margin-left: -37px;
     }
-    nav ul li .page-text{
+    nav ul li .page-text {
         margin-left: -11px;
     }
-    nav ul .accordion{
+    nav ul .accordion {
         display: block;
     }
-    nav ul .mb-drop{
+    nav ul .mb-drop {
         margin-left: 100px;
     }
-    .accordion-body{
+    .accordion-body {
         padding: 0;
         margin-top: -12px;
     }
-    .accordion-body li a{
+    .accordion-body li a {
         font-size: 16px;
     }
-    .accordion-button:not(.collapsed){
+    .accordion-button:not(.collapsed) {
         background: none;
     }
-    .accordion-button:focus{
+    .accordion-button:focus {
         border-color: #fff;
         box-shadow: 0;
     }
-    nav ul li a{
+    nav ul li a {
         font-size: 25px;
     }
-    nav ul .drop{
+    nav ul .drop {
         display: none;
     }
-    nav ul .drop .drop-down{
+    nav ul .drop .drop-down {
         display: none;
     }
-    nav ul li:hover a:before{
+    nav ul li:hover a:before {
         display: none;
     }
-    nav .buttons{
+    nav .buttons {
         position: fixed;
         top: 2%;
         left: 43%;
     }
+    nav .buttons a {
+        margin: 0 5px;
+        position: relative;
+    }
+    nav .buttons .login:before {
+        content: "LogIn";
+        position: absolute;
+        bottom: -22px;
+        left: -9px;
+        width: 150%;
+        height: 20px;
+        background: #6d68fe;
+        border-radius: 5px;
+        display: inline-block;
+        font-family: 'Arimo', sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+        padding: 0px 10px;
+        opacity: 0;
+        transition: .4s;
+    }
+    nav .buttons .signup:before {
+        content: "SignUp";
+        position: absolute;
+        bottom: -22px;
+        left: -9px;
+        width: 150%;
+        height: 20px;
+        background: #6d68fe;
+        border-radius: 5px;
+        display: inline-block;
+        font-family: 'Arimo', sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+        padding: 0px 10px;
+        opacity: 0;
+        transition: .4s;
+    }
+    nav .buttons .login:hover:before{
+        opacity: 1;
+    }
+    nav .buttons .signup:hover:before{
+        opacity: 1;
+    }
     /* ============================
             nav responsive end
     ============================== */
-
-
     /* ============================
          banner responsive start
     ============================== */
-    #banner-part{
+    #banner-part {
         padding-top: 0;
     }
-    #banner-part .banner-text svg{
+    #banner-part .banner-text svg {
         display: none;
     }
-    #banner-part .banner-text h2{
+    #banner-part .banner-text h2 {
         font-size: 40px;
         text-align: center;
     }
-    #banner-part .banner-text p{
+    #banner-part .banner-text p {
         font-size: 14px;
         margin-top: 25px;
         text-align: center;
     }
-    #banner-part .banner-text .buttons{
+    #banner-part .banner-text .buttons {
         text-align: center;
     }
     /* ============================
          banner responsive end
     ============================== */
-
-
-
     /* ============================
      search-part responsive start
     ============================== */
-    #search-part input{
+    #search-part input {
         width: 100%;
     }
-    #search-part select{
+    #search-part select {
         width: 100%;
         margin-left: 0;
         margin-top: 10px;
     }
-    #search-part button{
+    #search-part button {
         padding: 7px 101px;
         margin-top: 20px;
     }
     /* ============================
          search-part responsive end
     ============================== */
-
-
-
     /* ============================
     category-part responsive start
     ============================== */
-    #category-part{
+    #category-part {
         padding: 60px 0;
     }
-    #category-part .cat .item a{
+    #category-part .cat .item a {
         left: 11%;
     }
-    #category-part .cat .item{
+    #category-part .cat .item {
         margin-top: 30px;
     }
     /* ============================
         category-part responsive end
     ============================== */
-
-
-
     /* ============================
         works part responsive start
     ============================== */
-    #works-part{
+    #works-part {
         padding: 60px 0;
     }
-    #works-part .item{
+    #works-part .item {
         margin-top: 30px;
     }
-    #works-part .item h3{
+    #works-part .item h3 {
         font-size: 18px;
     }
-    #works-part .item p{
+    #works-part .item p {
         font-size: 14px;
         line-height: 22px;
         width: 100%;
@@ -206,82 +234,74 @@
     /* ============================
         works part responsive end
     ============================== */
-
-
     /* ============================
      recent job part responsive start
     ============================== */
-    #recents-jobs{
+    #recents-jobs {
         padding: 60px 0;
     }
-    #recents-jobs .top-part{
+    #recents-jobs .top-part {
         margin-top: 30px;
     }
-    #recents-jobs .top-part input{
+    #recents-jobs .top-part input {
         width: 95%;
         margin-left: 5px;
         padding: 6px;
     }
-    #recents-jobs .top-part select{
+    #recents-jobs .top-part select {
         width: 95%;
         margin-left: 5px;
         margin-top: 10px;
         padding: 6px;
     }
-    #recents-jobs .top-part button{
+    #recents-jobs .top-part button {
         font-size: 16px;
         padding: 8px 35px;
         margin-left: 83px;
         margin-top: 20px;
     }
-    #recents-jobs .top-part label{
+    #recents-jobs .top-part label {
         margin-left: 22px;
     }
-    #recents-jobs .top-part .check1{
+    #recents-jobs .top-part .check1 {
         margin-left: 20px;
     }
-    #recents-jobs .top-part .check2{
+    #recents-jobs .top-part .check2 {
         margin-left: 11px;
     }
-    #recents-jobs .bottom-part .top{
+    #recents-jobs .bottom-part .top {
         margin-top: 25px;
     }
     /* ============================
      recent job part responsive end
     ============================== */
-
-
-
     /* ============================
      counter part responsive start
     ============================== */
-    #counter-part{
+    #counter-part {
         padding: 60px 0;
     }
-    #counter-part .item{
+    #counter-part .item {
         margin-top: 30px;
     }
-    #counter-part .item .counter{
+    #counter-part .item .counter {
         font-size: 35px;
         margin-top: 0;
     }
     /* ============================
      counter part responsive end
     ============================== */
-
-
-
     /* ============================
      download part responsive start
     ============================== */
-    #download-part{
+    #download-part {
         padding: 60px 0;
     }
-    #download-part .text h2{
+    #download-part .text h2 {
         font-size: 30px;
         text-align: center;
     }
-    #download-part .text p{
+    #download-part .text p {
         font-size: 14px;
         line-height: 22px;
         width: 275px;
@@ -289,21 +309,21 @@
         margin-top: 15px;
         margin-left: 11px;
     }
-    #download-part .text .button{
+    #download-part .text .button {
         display: none;
     }
-    #download-part .text .mb-button{
+    #download-part .text .mb-button {
         display: block;
     }
-    #download-part .text .mb-button a{
+    #download-part .text .mb-button a {
         font-size: 15px;
         padding: 6px 10px;
         margin-left: 10px;
     }
-    #download-part .text .mb-button a:nth-child(2){
+    #download-part .text .mb-button a:nth-child(2) {
         margin-left: 1px;
     }
-    #download-part .text .mb-button .icon{
+    #download-part .text .mb-button .icon {
         display: block;
         margin-right: 5px;
         text-align: center;
@@ -311,41 +331,35 @@
     /* ============================
      download part responsive end
     ============================== */
-
-
-
     /* ================================
     remote worker part responsive start
     =================================== */
-    #remote-part .buttons{
+    #remote-part .buttons {
         display: initial;
     }
-    #remote-part .buttons a{
+    #remote-part .buttons a {
         margin-top: 20px;
         margin-left: 50px;
     }
     /* ================================
     remote worker part responsive end
     ================================== */
-
-
-
     /* ================================
         subscribe part responsive start
     ================================== */
-    #subscribe-part .subscribe-item{
+    #subscribe-part .subscribe-item {
         width: 95%;
         padding-bottom: 50px;
     }
-    #subscribe-part .subscribe-item h2{
+    #subscribe-part .subscribe-item h2 {
         font-size: 22px;
     }
-    #subscribe-part .subscribe-item input{
+    #subscribe-part .subscribe-item input {
         width: 85%;
         padding: 6px;
         margin-top: 10px;
     }
-    #subscribe-part .subscribe-item form button{
+    #subscribe-part .subscribe-item form button {
         font-size: 16px;
         padding: 6px 10px;
         top: 58%;
@@ -354,94 +368,122 @@
     /* ================================
         subscribe part responsive end
     ================================== */
-
-    .top-button{
+    .top-button {
         bottom: 88px;
     }
-
-    .top-button span{
+    .top-button span {
         font-size: 15px;
         padding: 8px;
     }
-
-
     /* ================================
         footer part responsive start
     ================================== */
-    #footer-part .overlay .item{
+    #footer-part .overlay .item {
         margin-top: 8px;
     }
-    #footer-part .overlay .about p{
+    #footer-part .overlay .about p {
         font-size: 14px;
     }
-    #footer-part .overlay .item .title .links-title{
+    #footer-part .overlay .item .title .links-title {
         margin-top: 30px;
     }
-    #footer-part .overlay .social-links a{
+    #footer-part .overlay .social-links a {
         padding: 7px;
         margin: 0 4px;
     }
-    #footer-part .overlay .social-links .facebook{
+    #footer-part .overlay .social-links .facebook {
         padding: 6px 14px;
     }
-    #footer-part .overlay .social-links .twitter{
+    #footer-part .overlay .social-links .twitter {
         padding: 6px 12px;
     }
-    #footer-part .overlay .social-links .behance{
+    #footer-part .overlay .social-links .behance {
         padding: 6px 11px;
     }
-    #footer-part .overlay .social-links .linkedin{
+    #footer-part .overlay .social-links .linkedin {
         padding: 6px 13px;
     }
-
-
-
     /* ================================
         footer part responsive end
     ================================== */
+    /* ================================
+        signup part responsive start
+    ================================== */
+    #sign-up .form-part {
+        width: 90%;
+    }
+    #sign-up .form-part span {
+        font-size: 50px;
+    }
+    #sign-up .form-part input {
+        font-size: 15px;
+        padding: 3px 10px;
+        margin-top: 10px !important;
+    }
+    #sign-up .form-part .short {
+        width: 98%;
+    }
+    #sign-up .form-part .right {
+        margin-left: 0;
+    }
+    #sign-up .form-part .e-mail {
+        margin: 0;
+    }
+    #sign-up .form-part .gen {
+        margin-left: 6px;
+    }
+    #sign-up .form-part button {
+        width: 98%;
+    }
+    /* ================================
+        signup part responsive end
+    ================================== */
+    /* ================================
+        login part responsive start
+    ================================== */
+    #login-page .form-part {
+        width: 90%;
+    }
+    #login-page .form-part span {
+        font-size: 50px;
+    }
+    /* ================================
+        login part responsive end
+    ================================== */
 }
-
-
-@media (min-width:576px) and (max-width:767px){
-
-
-
-    .title h2{
+@media (min-width:576px) and (max-width:767px) {
+    .title h2 {
         font-size: 30px;
     }
-    .title p{
+    .title p {
         font-size: 15px;
         width: 100%;
     }
-
-
-
     /* ============================
         preloader responsive start
     ============================== */
-    #preloader .dot{
+    #preloader .dot {
         left: 47%;
     }
-    #preloader .dot:nth-child(2){
+    #preloader .dot:nth-child(2) {
         left: 39%;
     }
-    #preloader .dot:nth-child(3){
+    #preloader .dot:nth-child(3) {
         left: 31%;
     }
-    #preloader .dot:nth-child(4){
+    #preloader .dot:nth-child(4) {
         left: 55%;
     }
-    #preloader .dot:nth-child(5){
+    #preloader .dot:nth-child(5) {
         left: 63%;
     }
     /* ============================
         preloader responsive end
     ============================== */
-
     /* ============================
             nav responsive start
     ============================== */
-    nav{
+    nav {
         background: #fff;
         border-bottom: 1px solid #e9e9e9;
         position: fixed !important;
@@ -450,118 +492,121 @@
         display: block !important;
         overflow: hidden;
     }
-    .fixed-menu{
+    .fixed-menu {
         display: none;
     }
-    nav .logo img{
+    nav .logo img {
         width: 75%;
     }
-    nav .buttons a{
+    nav .buttons a {
         font-size: 16px;
         padding: 8px 12px;
     }
-    nav .bar{
+    nav .bar {
         background: #0abbf0;
         border: 3px solid #6d68fe;
     }
-    .navbar-toggler:focus{
+    .navbar-toggler:focus {
         box-shadow: none;
     }
-    nav .bar .menu-bars{
+    nav .bar .menu-bars {
         color: #fff;
     }
-    nav ul li{
+    nav ul li {
         text-align: center;
     }
-    nav ul li .candi-text{
+    nav ul li .candi-text {
         margin-left: -50px;
     }
-    nav ul li .page-text{
+    nav ul li .page-text {
         margin-left: -11px;
     }
-    nav ul .accordion{
+    nav ul .accordion {
         display: block;
     }
-    nav ul .mb-drop{
+    nav ul .mb-drop {
         margin-left: 207px;
     }
-    .accordion-body{
+    .accordion-body {
         padding: 0;
         margin-top: -12px;
     }
-    .accordion-body li a{
+    .accordion-body li a {
         font-size: 18px;
     }
-    .accordion-button:not(.collapsed){
+    .accordion-button:not(.collapsed) {
         background: none;
     }
-    .accordion-button:focus{
+    .accordion-button:focus {
         border-color: #fff;
         box-shadow: 0;
     }
-    .accordion-body li a{
+    .accordion-body li a {
         font-size: 25px;
     }
-    nav ul li a{
+    nav ul li a {
         font-size: 35px;
     }
-    nav ul .drop{
+    nav ul .drop {
         display: none;
     }
-    nav ul .drop .drop-down{
+    nav ul .drop .drop-down {
         display: none;
     }
-    nav ul li:hover a:before{
+    nav ul li:hover a:before {
         display: none;
     }
-    nav .buttons{
+    nav .buttons {
         position: fixed;
         top: 1.5%;
         left: 62%;
     }
+    nav .buttons .login:before{
+        width: 120%;
+        left: -6px;
+    }
+    nav .buttons .signup:before{
+        width: 130%;
+        left: -6px;
+    }
     /* ============================
             nav responsive end
     ============================== */
-
-
-
     /* ============================
          banner responsive start
     ============================== */
-    #banner-part{
+    #banner-part {
         padding-top: 0;
     }
-    #banner-part .banner-text svg{
+    #banner-part .banner-text svg {
         display: none;
     }
-    #banner-part .banner-text h2{
+    #banner-part .banner-text h2 {
         font-size: 54px;
         text-align: center;
     }
-    #banner-part .banner-text p{
+    #banner-part .banner-text p {
         font-size: 15px;
         margin-top: 25px;
         text-align: center;
     }
-    #banner-part .banner-text .buttons{
+    #banner-part .banner-text .buttons {
         text-align: center;
     }
     /* ============================
          banner responsive end
     ============================== */
-
-
     /* ============================
         search responsive start
     ============================== */
-    #search-part input{
+    #search-part input {
         width: 37%;
         padding: 5px;
     }
-    #search-part select{
+    #search-part select {
         padding: 7px;
     }
-    #search-part button{
+    #search-part button {
         padding: 7px 25px;
         margin-top: 20px;
         margin-left: 187px;
@@ -569,16 +614,13 @@
     /* ============================
         search responsive end
     ============================== */
-
-
-
     /* ============================
         works part responsive start
     ============================== */
-    #works-part .item{
+    #works-part .item {
         margin-top: 25px;
     }
-    #works-part .item p{
+    #works-part .item p {
         font-size: 15px;
         width: 100%;
         margin-top: 42px;
@@ -586,103 +628,93 @@
     /* ============================
         works part responsive end
     ============================== */
-
     /* ============================
      recent job part responsive start
     ============================== */
-    #recents-jobs .top-part input{
+    #recents-jobs .top-part input {
         width: 47%;
         padding: 5px;
     }
-    #recents-jobs .top-part select{
+    #recents-jobs .top-part select {
 
         width: 31%;
         padding: 7px;
         margin-left: 9px;
     }
-    #recents-jobs .top-part button{
+    #recents-jobs .top-part button {
         font-size: 16px;
         padding: 4px 16px;
         margin-left: 8px;
     }
-    #recents-jobs .top-part .check{
+    #recents-jobs .top-part .check {
         width: 10px;
         margin-left: 10px;
     }
-    #recents-jobs .top-part span{
+    #recents-jobs .top-part span {
         font-size: 13px;
         margin-left: 6px;
     }
-    #recents-jobs .bottom-part .plate h3{
+    #recents-jobs .bottom-part .plate h3 {
         font-size: 16px;
     }
-    #recents-jobs .bottom-part .plate h4{
+    #recents-jobs .bottom-part .plate h4 {
         font-size: 16px;
         font-weight: 400;
         margin-top: 5px;
     }
-    #recents-jobs .bottom-part .plate p{
+    #recents-jobs .bottom-part .plate p {
         font-size: 14px;
     }
-    #recents-jobs .buttons a{
+    #recents-jobs .buttons a {
         padding-left: 15px;
         padding-right: 15px;
     }
     /* ============================
      recent job part responsive end
     ============================== */
-
-
-
     /* ============================
      counter part responsive start
     ============================== */
-    #counter-part .item .counter{
+    #counter-part .item .counter {
         font-size: 40px;
     }
-    #counter-part .down{
+    #counter-part .down {
         margin-top: 40px;
     }
     /* ============================
      counter part responsive end
     ============================== */
-
-
     /* ============================
      download part responsive start
     ============================== */
-    #download-part .text{
+    #download-part .text {
         text-align: center;
     }
-    #download-part .text h2{
+    #download-part .text h2 {
         font-size: 28px;
     }
-    #download-part .text p{
+    #download-part .text p {
         font-size: 14px;
         width: 100%;
     }
-    #download-part .text .button{
+    #download-part .text .button {
         justify-content: center;
     }
     /* ============================
      download part responsive end
     ============================== */
-
-
-
-
     /* ============================
      remote part responsive start
     ============================== */
-    #remote-part .item{
+    #remote-part .item {
         width: 80%;
         margin-left: 51px;
     }
-    #remote-part .buttons{
+    #remote-part .buttons {
         display: initial;
         text-align: center;
     }
-    #remote-part .buttons a{
+    #remote-part .buttons a {
         font-size: 18px;
         margin-top: 30px;
         margin-left: 148px;
@@ -690,22 +722,19 @@
     /* ============================
      remote part responsive end
     ============================== */
-
-
-
     /* ============================
      subscribe part responsive start
     ============================== */
-    #subscribe-part .subscribe-item h2{
+    #subscribe-part .subscribe-item h2 {
         font-size: 32px;
     }
-    #subscribe-part .subscribe-item input{
+    #subscribe-part .subscribe-item input {
         font-size: 15px;
         width: 79%;
         padding: 7px;
         margin-top: 24px;
     }
-    #subscribe-part .subscribe-item form button{
+    #subscribe-part .subscribe-item form button {
         font-size: 14px;
         padding: 7px 10px;
         top: 46%;
@@ -714,190 +743,217 @@
     /* ============================
      subscribe part responsive end
     ============================== */
-
-
-
     /* ============================
      footer part responsive start
     ============================== */
-    #footer-part .overlay .about p{
+    #footer-part .overlay .about p {
         font-size: 14px;
     }
     /* ============================
      footer part responsive end
     ============================== */
-
+    /* ================================
+        signup part responsive start
+    ================================== */
+    #sign-up .form-part {
+        width: 90%;
+    }
+    #sign-up .form-part span {
+        font-size: 50px;
+    }
+    #sign-up .form-part input {
+        font-size: 15px;
+        padding: 3px 10px;
+        margin-top: 10px !important;
+    }
+    #sign-up .form-part .short {
+        width: 98%;
+    }
+    #sign-up .form-part .right {
+        margin-left: 0;
+    }
+    #sign-up .form-part .e-mail {
+        margin: 0;
+    }
+    #sign-up .form-part .gen {
+        margin-left: 6px;
+    }
+    #sign-up .form-part button {
+        width: 98%;
+    }
+    /* ================================
+        signup part responsive end
+    ================================== */
+    /* ================================
+        login part responsive start
+    ================================== */
+    #login-page .form-part {
+        width: 90%;
+    }
+    #login-page .form-part span {
+        font-size: 50px;
+    }
+    /* ================================
+        login part responsive end
+    ================================== */
 }
-
-
-@media (min-width:768px) and (max-width:991px){
-
-
-
-
-
+@media (min-width:768px) and (max-width:991px) {
     /* ============================
         preloader responsive start
     ============================== */
-    #preloader .dot{
+    #preloader .dot {
         left: 50%;
     }
-    #preloader .dot:nth-child(2){
+    #preloader .dot:nth-child(2) {
         left: 47%;
     }
-    #preloader .dot:nth-child(3){
+    #preloader .dot:nth-child(3) {
         left: 44%;
     }
-    #preloader .dot:nth-child(4){
+    #preloader .dot:nth-child(4) {
         left: 53%;
     }
-    #preloader .dot:nth-child(5){
+    #preloader .dot:nth-child(5) {
         left: 56%;
     }
     /* ============================
         preloader responsive end
     ============================== */
-
-    
-
     /* ============================
             nav responsive start
     ============================== */
-    nav .logo img{
+    nav .logo img {
         width: 75%;
     }
-    nav .menu-bars{
+    nav .menu-bars {
         display: none;
     }
-    nav ul{
+    nav ul {
         margin-right: 10px !important;
     }
-    nav ul li{
+    nav ul li {
         margin: 0 7px;
     }
-    nav ul li a{
+    nav ul li a {
         font-size: 15px;
     }
-    nav ul li a svg{
+    nav ul li a svg {
         position: absolute;
         top: 13px;
         right: -7px;
     }
-    nav ul .drop .drop-down{
+    nav ul .drop .drop-down {
         width: 242%;
     }
-    nav ul .drop .candi{
+    nav ul .drop .candi {
         width: 160%;
         left: -20px;
     }
-    nav ul .drop .pages{
+    nav ul .drop .pages {
         width: 185%;
         left: -20px;
     }
-    nav ul .drop .drop-down li a{
+    nav ul .drop .drop-down li a {
         font-size: 14px;
     }
-    nav .buttons a{
+    nav .buttons a {
         font-size: 14px;
         padding: 6px 5px;
+        margin: 0 5px;
+    }
+    nav .buttons .signup{
+        margin-right: 10px;
+    }
+    nav .buttons .login:before{
+        width: 158%;
+        left: -12px;
+    }
+    nav .buttons .signup:before{
+        width: 165%;
+        left: -13px;
     }
     /* ============================
             nav responsive end
     ============================== */
-
-
-
     /* ============================
     banner part responsive start
     ============================== */
-    #banner-part .banner-text h2{
+    #banner-part .banner-text h2 {
         text-align: center;
     }
-    #banner-part .banner-text p{
+    #banner-part .banner-text p {
         text-align: center;
         margin-top: 20px;
     }
-    #banner-part .banner-text .buttons{
+    #banner-part .banner-text .buttons {
         text-align: center;
     }
-    #banner-part .banner-text svg{
+    #banner-part .banner-text svg {
         display: none;
     }
-    
     /* ============================
         banner part responsive end
     ============================== */
-
-
-
     /* ============================
         search responsive start
     ============================== */
-    #search-part select{
+    #search-part select {
         width: 27%;
     }
     /* ============================
         search responsive end
     ============================== */
-
-
     /* ============================
     category-part responsive start
     ============================== */
-    #category-part{
+    #category-part {
         padding-bottom: 120px;
     }
-    #category-part .top{
+    #category-part .top {
         margin-top: 60px;
     }
-    #category-part .cat .item{
+    #category-part .cat .item {
         margin-top: 22px;
     }
-    #category-part .cat .item a{
+    #category-part .cat .item a {
         left: 16%;
     }
     /* ============================
     category-part responsive end
     ============================== */
-
-
     /* ============================
         works-part responsive start
     ============================== */
-    #works-part{
+    #works-part {
         padding: 120px 0;
     }
-    #works-part .item h3{
+    #works-part .item h3 {
         font-size: 18px;
     }
-    #works-part .item span{
+    #works-part .item span {
         top: 50%;
     }
-    #works-part .item p{
+    #works-part .item p {
         font-size: 14px;
         width: 100%;
     }
-
     /* ============================
         works-part responsive end
     ============================== */
-
-
-
     /* ============================
      recent job part responsive start
     ============================== */
-    #recents-jobs{
+    #recents-jobs {
         padding: 120px 0;
     }
-    #recents-jobs .top-part input{
+    #recents-jobs .top-part input {
         padding: 7px;
     }
-    #recents-jobs .top-part select{
+    #recents-jobs .top-part select {
         padding: 9px;
         margin-left: 5px;
     }
-    #recents-jobs .top-part button{
+    #recents-jobs .top-part button {
         font-size: 16px;
         padding: 6px 15px;
         margin-left: 10px;
@@ -905,346 +961,350 @@
     /* ============================
      recent job part responsive end
     ============================== */
-
-
-
     /* ============================
      counter part responsive start
     ============================== */
-    #counter-part{
+    #counter-part {
         padding: 120px 0;
     }
-    #counter-part .item .counter{
+    #counter-part .item .counter {
         font-size: 40px;
         margin-top: 0;
     }
-    #counter-part .item h3{
+    #counter-part .item h3 {
         font-size: 18px;
     }
-
     /* ============================
      counter part responsive end
     ============================== */
-
-
     /* ============================
      download part responsive start
     ============================== */
-    #download-part .text{
+    #download-part .text {
         text-align: center;
     }
-    #download-part .text h2{
+    #download-part .text h2 {
         font-size: 28px;
     }
-    #download-part .text p{
+    #download-part .text p {
         font-size: 14px;
         width: 100%;
     }
-    #download-part .text .button{
+    #download-part .text .button {
         justify-content: center;
     }
     /* ============================
      download part responsive end
     ============================== */
-
-
-
     /* ============================
      remote part responsive start
     ============================== */
-    #remote-part .item .top .img img{
+    #remote-part .item .top .img img {
         width: 75%;
     }
-    #remote-part .item .top .details h3{
+    #remote-part .item .top .details h3 {
         font-size: 18px;
     }
-    #remote-part .item .top .details h5{
+    #remote-part .item .top .details h5 {
         font-size: 15px;
     }
-    #remote-part .item .top .review .icons svg{
+    #remote-part .item .top .review .icons svg {
         font-size: 8px;
     }
-    #remote-part .item .top .review p{
+    #remote-part .item .top .review p {
         font-size: 12px;
         margin-top: 7px;
     }
-    #remote-part .item .bottom .job-details h5{
+    #remote-part .item .bottom .job-details h5 {
         font-size: 15px;
     }
-    #remote-part .item .bottom .job-details h4{
+    #remote-part .item .bottom .job-details h4 {
         font-size: 18px;
     }
-    #remote-part .item .bottom a{
+    #remote-part .item .bottom a {
         font-size: 16px;
     }
-
     /* ============================
      remote part responsive end
     ============================== */
-
-
-
     /* ============================
      subscribe part responsive start
     ============================== */
-    #subscribe-part .subscribe-item input{
+    #subscribe-part .subscribe-item input {
         width: 84%;
         padding: 8px;
         margin-top: 30px;
     }
-    #subscribe-part .subscribe-item form button{
+    #subscribe-part .subscribe-item form button {
         font-size: 17px;
         padding: 7px 15px;
         top: 49%;
         right: -1%;
     }
-
     /* ============================
      subscribe part responsive end
     ============================== */
-
-
-
     /* ============================
      footer part responsive start
     ============================== */
-    #footer-part .overlay .about p{
+    #footer-part .overlay .about p {
         font-size: 14px;
         line-height: 24px;
     }
-    #footer-part .overlay .social-links a{
+    #footer-part .overlay .social-links a {
         margin: 0 2px;
     }
-
-
-
-
-
     /* ============================
      footer part responsive end
     ============================== */
+    /* ================================
+        signup part responsive start
+    ================================== */
+    #sign-up .form-part {
+        width: 90%;
+    }
+    #sign-up .form-part span {
+        font-size: 50px;
+    }
+    #sign-up .form-part input {
+        font-size: 15px;
+        padding: 5px 10px;
+        margin-top: 20px !important;
+    }
+    #sign-up .form-part .short {
+        width: 48%;
+    }
+    #sign-up .form-part .right {
+        margin-left: 10px;
+    }
+    #sign-up .form-part .e-mail {
+        margin: 0;
+    }
+    #sign-up .form-part .gen {
+        margin-left: 6px;
+    }
+    #sign-up .form-part button {
+        width: 98%;
+    }
+    /* ================================
+        signup part responsive end
+    ================================== */
+    /* ================================
+        login part responsive start
+    ================================== */
+    #login-page .form-part {
+        width: 60%;
+    }
+    #login-page .form-part span {
+        font-size: 50px;
+    }
+    /* ================================
+        login part responsive end
+    ================================== */
 }
-
-
-@media (min-width:992px) and (max-width:1199px){
-
-
-
+@media (min-width:992px) and (max-width:1199px) {
     /* ============================
         preloader responsive start
     ============================== */
-    #preloader .dot{
+    #preloader .dot {
         left: 50%;
     }
-    #preloader .dot:nth-child(2){
+    #preloader .dot:nth-child(2) {
         left: 47%;
     }
-    #preloader .dot:nth-child(3){
+    #preloader .dot:nth-child(3) {
         left: 44%;
     }
-    #preloader .dot:nth-child(4){
+    #preloader .dot:nth-child(4) {
         left: 53%;
     }
-    #preloader .dot:nth-child(5){
+    #preloader .dot:nth-child(5) {
         left: 56%;
     }
     /* ============================
         preloader responsive end
     ============================== */
-    
-
     /* ============================
             nav responsive start
     ============================== */
-    nav .logo img{
+    nav .logo img {
         width: 75%;
     }
-    nav .menu-bars{
+    nav .menu-bars {
         display: none;
     }
-    nav ul{
+    nav ul {
         margin-right: 10px !important;
     }
-    nav ul li{
+    nav ul li {
         margin: 0 13px;
     }
-    nav ul li a{
+    nav ul li a {
         font-size: 20px;
     }
-    nav ul li a svg{
+    nav ul li a svg {
         position: absolute;
         top: 13px;
         right: -10px;
     }
-    nav ul .drop .drop-down{
+    nav ul .drop .drop-down {
         width: 242%;
     }
-    nav ul .drop .candi{
+    nav ul .drop .candi {
         width: 160%;
         left: -20px;
     }
-    nav ul .drop .pages{
+    nav ul .drop .pages {
         width: 185%;
         left: -20px;
     }
-    nav .buttons a{
+    nav .buttons a {
         font-size: 16px;
         padding: 8px 10px;
+    }
+    nav .buttons .login:before{
+        width: 125%;
+        left: -6px;
+    }
+    nav .buttons .signup:before{
+        width: 130%;
+        left: -7px;
     }
     /* ============================
             nav responsive end
     ============================== */
-
-
     /* ============================
         banner responsive start
     ============================== */
-    #banner-part .banner-text h2{
+    #banner-part .banner-text h2 {
         font-size: 50px;
     }
-    #banner-part .banner-text p{
+    #banner-part .banner-text p {
         font-size: 14px;
     }
-    #banner-part .banner-text svg{
+    #banner-part .banner-text svg {
         font-size: 45px;
     }
     /* ============================
         banner responsive end
     ============================== */
-
-
-
     /* ============================
         search responsive start
     ============================== */
-    #search-part input{
+    #search-part input {
         width: 30%;
     }
-    #search-part select{
+    #search-part select {
         width: 28%;
     }
-    #search-part button{
+    #search-part button {
         margin-left: 10px;
     }
     /* ============================
         search responsive end
     ============================== */
-
-
-
     /* ============================
     category-part responsive start
     ============================== */
-    #category-part{
+    #category-part {
         padding-bottom: 120px;
     }
-    #category-part .top{
+    #category-part .top {
         margin-top: 60px;
     }
-    #category-part .cat .item{
+    #category-part .cat .item {
         margin-top: 22px;
     }
-    #category-part .cat .item h2{
+    #category-part .cat .item h2 {
         font-size: 20px;
     }
-    #category-part .cat .item p{
+    #category-part .cat .item p {
         font-size: 15px;
     }
-    #category-part .cat .item a{
+    #category-part .cat .item a {
         font-size: 16px;
         left: 1%;
     }
     /* ============================
     category-part responsive end
     ============================== */
-
-
     /* ============================
         works-part responsive start
     ============================== */
-    #works-part .item p{
+    #works-part .item p {
         width: 100%;
     }
-    #works-part .item span{
+    #works-part .item span {
         top: 51%;
     }
     /* ============================
         works-part responsive end
     ============================== */
-
-
     /* ============================
     download-part responsive start
     ============================== */
-    #download-part .text h2{
+    #download-part .text h2 {
         font-size: 28px;
     }
-    #download-part .text p{
+    #download-part .text p {
         font-size: 14px;
     }
     /* ============================
     download-part responsive end
     ============================== */
-
-
     /* ============================
      recent job part responsive start
     ============================== */
-    #recents-jobs{
+    #recents-jobs {
         padding: 120px 0;
     }
-    #recents-jobs .top-part input{
+    #recents-jobs .top-part input {
         padding: 7px;
         margin-left: 30px;
     }
-    #recents-jobs .top-part select{
+    #recents-jobs .top-part select {
         padding: 9px;
         margin-left: 5px;
     }
-    #recents-jobs .top-part button{
+    #recents-jobs .top-part button {
         font-size: 16px;
         padding: 6px 15px;
         margin-left: 10px;
     }
-    #recents-jobs .top-part .check{
+    #recents-jobs .top-part .check {
         margin-left: 30px;
     }
-    #recents-jobs .bottom-part{
+    #recents-jobs .bottom-part {
         width: 94%;
         margin-left: 27px;
     }
-    #recents-jobs .bottom-part .plate{
+    #recents-jobs .bottom-part .plate {
         margin-left: 3px;
     }
     /* ============================
      recent job part responsive end
     ============================== */
-
-
     /* ============================
      counter part responsive start
     ============================== */
-    #counter-part .item .counter{
+    #counter-part .item .counter {
         font-size: 45px;
     }
-    #counter-part .item h3{
+    #counter-part .item h3 {
         font-size: 18px;
     }
     /* ============================
      counter part responsive end
     ============================== */
-
-
-
     /* ============================
      subscribe part responsive start
     ============================== */
-    #subscribe-part .subscribe-item input{
+    #subscribe-part .subscribe-item input {
         width: 80%;
         padding: 10px;
         margin-top: 24px;
     }
-    #subscribe-part .subscribe-item form button{
+    #subscribe-part .subscribe-item form button {
         padding: 8px 15px;
         top: 45%;
         right: 3%;
@@ -1252,20 +1312,57 @@
     /* ============================
      subscribe part responsive end
     ============================== */
-
-
-
     /* ============================
      footer part responsive start
     ============================== */
-    #footer-part .overlay .about p{
+    #footer-part .overlay .about p {
         font-size: 14px;
     }
-
-
-
-
     /* ============================
      footer part responsive end
     ============================== */
+    /* ================================
+        signup part responsive start
+    ================================== */
+    #sign-up .form-part {
+        width: 70%;
+    }
+    #sign-up .form-part span {
+        font-size: 50px;
+    }
+    #sign-up .form-part input {
+        font-size: 15px;
+        padding: 5px 10px;
+        margin-top: 20px !important;
+    }
+    #sign-up .form-part .short {
+        width: 48%;
+    }
+    #sign-up .form-part .right {
+        margin-left: 10px;
+    }
+    #sign-up .form-part .e-mail {
+        margin: 0;
+    }
+    #sign-up .form-part .gen {
+        margin-left: 6px;
+    }
+    #sign-up .form-part button {
+        width: 98%;
+    }
+    /* ================================
+        signup part responsive end
+    ================================== */
+    /* ================================
+        login part responsive start
+    ================================== */
+    #login-page .form-part {
+        width: 60%;
+    }
+    #login-page .form-part span {
+        font-size: 50px;
+    }
+    /* ================================
+        login part responsive end
+    ================================== */
 }

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job-flex SignUp Page</title>
+  <!----fonts links start---->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <!----fonts links end---->
+  <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+  <!----css links start---->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!----css links end---->
+</head>
+
+<body>
+  <!-- ===========================
+            nav part start
+    ============================ -->
+  <nav class="navbar navbar-expand-lg navbar-expand-md menu-bar">
+    <div class="container-lg">
+      <div class="logo">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="logo">
+        </a>
+      </div>
+      <button class="navbar-toggler bar" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="menu-bars"><i class="fas fa-ellipsis-v"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item drop">
+            <a class="nav-link" href="#">Jobs<i class="fas fa-angle-down"></i></a>
+            <ul class="drop-down">
+              <li>
+                <a href="#">Govt. Job</a>
+              </li>
+              <li>
+                <a href="#">Non Govt. Job</a>
+              </li>
+            </ul>
+          </li>
+          <!-- accordion mb drop-down1 -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <li class="mb-drop">
+                    <a href="#">Jobs</a>
+                  </li>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <ul class="accordion-body">
+                  <li>
+                    <a href="#">Govt. Job</a>
+                  </li>
+                  <li>
+                    <a href="#">Non Govt. Job</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- accordion mb drop-down1 -->
+          <li class="nav-item drop">
+            <a class="nav-link" href="#">Candidates<i class="fas fa-angle-down"></i></a>
+            <ul class="drop-down candi">
+              <li><a href="#">Top Candidates</a></li>
+              <li><a href="#">Top Candidates 2</a></li>
+            </ul>
+          </li>
+          <!-- accordion mb drop-down2 -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <li class="mb-drop">
+                    <a class="candi-text" href="#">Candidates</a>
+                  </li>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <ul class="accordion-body">
+                  <li>
+                    <a href="#">Top Candidates</a>
+                  </li>
+                  <li>
+                    <a href="#">Top Candidates 2</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- accordion mb drop-down2 -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Employers</a>
+          </li>
+          <li class="nav-item drop">
+            <a class="nav-link" href="#">Pages<i class="fas fa-angle-down"></i></a>
+            <ul class="drop-down pages">
+              <li><a href="#">Blog Page</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Erorr 404</a></li>
+            </ul>
+          </li>
+          <!-- accordion mb drop-down3 -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <li class="mb-drop">
+                    <a class="page-text" href="#">Pages</a>
+                  </li>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <ul class="accordion-body">
+                  <li>
+                    <a href="#">Blog Page</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#">Erorr 404</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- accordion mb drop-down3 -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ===========================
+            nav part end
+    ============================ -->
+
+
+    <!-- ===========================
+          SignUp part start
+    ============================ -->
+    <section id="sign-up">
+      <!---container start--->
+      <div class="container">
+        <!---Form start--->
+        <form>
+          <div class="form-part">
+            <span><i class="fas fa-user-plus"></i></span>
+            <h2>SignUp Here</h2>
+          <div class="name">
+            <input class="put-name short" type="text" placeholder="First Name" required>
+            <input class="put-name short right" type="text" placeholder="Last Name" required>
+          </div>
+          <div class="email">
+            <input class="e-mail" type="email" placeholder="Your E-mail" required>
+          </div>
+          <div class="pass">
+            <input class="password short" type="text" placeholder="Password">
+            <input class="password short right" type="text" placeholder="Confirm-Password">
+          </div>
+          <div class="date-of-birth">
+            <h5>Date of birth</h5>
+            <select>
+              <option>Date</option>
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+            </select>
+            <select>
+              <option>Month</option>
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+            </select>
+            <select>
+              <option>Year</option>
+              <option>1991</option>
+              <option>1992</option>
+              <option>1993</option>
+              <option>1994</option>
+              <option>1995</option>
+              <option>1996</option>
+              <option>1997</option>
+            </select>
+          </div>
+          <label><input class="gen" type="radio" name="gender">Male</label>
+          <label><input class="gen" type="radio" name="gender">Female</label>
+          <div class="buttons">
+            <button type="submit">SignUp</button>
+          </div>
+          </div>
+        </form><!---Form end--->
+      </div><!---container end--->
+    </section>
+
+
+
+    <!-- ===========================
+          SignUp part end
+    ============================ -->
+  <!-- ===========================
+          counter jobs start
+    ============================ -->
+  <section id="counter-part">
+    <!---container start--->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 col-md-3">
+          <div class="item">
+            <img src="images/users.png" alt="users">
+            <div class="counter">3024</div>
+            <h3>Job Available</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-3">
+          <div class="item">
+            <img src="images/cv-submited.png" alt="cv-submited">
+            <div class="counter">3652</div>
+            <h3>CV Submitted</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-3">
+          <div class="item down">
+            <img src="images/companise.png" alt="companise">
+            <div class="counter">23654</div>
+            <h3>Companise</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-3">
+          <div class="item down">
+            <img src="images/job.png" alt="job">
+            <div class="counter">25035</div>
+            <h3>Job Search</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---container end--->
+  </section>
+  <!-- ===========================
+          counter jobs end
+    ============================ -->
+  <!-- ===========================
+          subscribe part start
+    ============================ -->
+  <section id="subscribe-part">
+    <!---container start--->
+    <div class="container">
+      <!---subscribe-item start--->
+      <div class="subscribe-item">
+        <h2>Subscribe Newsletter</h2>
+        <form>
+          <input type="text" placeholder="Enter Your E-mail">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <!---subscribe-item end--->
+    </div>
+    <!---container end--->
+  </section>
+  <!-- ===========================
+          subscribe part end
+    ============================ -->
+  <!-- ===========================
+          footer part start
+    ============================ -->
+  <section id="footer-part">
+    <!---overlay start--->
+    <div class="overlay">
+      <!---container start--->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="about item">
+              <!---title start--->
+              <div class="title">
+                <h2>About Us</h2>
+              </div>
+              <!---title end--->
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, magnam. Magni dolorem explicabo
+                voluptatem tenetur aliquam recusandae doloribus odit est repudiandae, laborum eligendi, rem quae
+                assumenda? Dolorem, quam. Iste sequi similique, possimus quisquam reiciendis omnis vel amet iure
+                corporis corrupti. Atque ullam perferendis, unde corrupti nulla voluptates enim! Consequatur debitis
+                nobis dolores voluptatem enim atque corrupti cumque iure dolorem rerum?</p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-1"></div>
+          <div class="col-lg-5 col-md-5">
+            <div class="social-links item">
+              <div class="title">
+                <h2 class="links-title">Social Links</h2>
+              </div>
+              <!---title end--->
+              <div class="icons">
+                <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="behance" href="#"><i class="fab fa-behance"></i></a>
+                <a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="googleplus" href="#"><i class="fab fa-google-plus-g"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg">
+            <div class="copy-right-part">
+              <p>Copyright 2021. All rights reserved by Designer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---container end--->
+    </div>
+    <!---overlay end--->
+  </section>
+  <!-- ===========================
+          footer part end
+    ============================ -->
+  <!----js links start---->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.js"></script>
+  <script src="js/jquery.waypoints.js"></script>
+  <script src="js/jquery.rcounterup.js"></script>
+  <script src="js/script.js"></script>
+  <!----js links end---->
+</body>
+
+</html>
