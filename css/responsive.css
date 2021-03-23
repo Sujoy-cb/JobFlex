@@ -86,12 +86,15 @@
     .accordion-body li a {
         font-size: 16px;
     }
+    .accordion-button{
+        border: none !important;
+    }
     .accordion-button:not(.collapsed) {
         background: none;
     }
     .accordion-button:focus {
-        border-color: #fff;
-        box-shadow: 0;
+        border-color: none !important;
+        box-shadow: none !important;
     }
     nav ul li a {
         font-size: 25px;
@@ -554,12 +557,15 @@
     .accordion-body li a {
         font-size: 18px;
     }
+    .accordion-button{
+        border: none !important;
+    }
     .accordion-button:not(.collapsed) {
         background: none;
     }
     .accordion-button:focus {
-        border-color: #fff;
-        box-shadow: 0;
+        border-color: none !important;
+        box-shadow: none !important;
     }
     .accordion-body li a {
         font-size: 25px;
